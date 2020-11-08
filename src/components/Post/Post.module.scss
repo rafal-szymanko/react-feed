@@ -1,0 +1,32 @@
+.root {
+    width: 30%;
+    margin-bottom: 20px;
+
+    .media {
+        height: 140px;
+    }
+    .content {
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .date {
+            font-size: 10px;
+        }
+        .description {
+            font-size: 10px;
+        }
+        .url {
+            text-decoration: none;
+            text-align: end;
+            color: inherit;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
