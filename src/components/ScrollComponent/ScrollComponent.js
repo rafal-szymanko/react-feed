@@ -24,7 +24,7 @@ const ScrollComponent = () => {
 
     useEffect(() => {
       const  handleScroll = () => {
-        const isBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 1);
+        const isBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight);
         setBottom(isBottom);
       }
       window.addEventListener("scroll", handleScroll);
@@ -32,8 +32,6 @@ const ScrollComponent = () => {
       window.removeEventListener("scroll", handleScroll);
       };
       }, []);
-
-      console.log(bottom)
 
     return (
       <div className={styles.root}>
