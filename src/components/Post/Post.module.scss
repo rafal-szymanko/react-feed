@@ -32,3 +32,16 @@
         }
     }
 }
+
+@media (max-width: 991.98px) { 
+    .root {
+        max-width: 45%;
+    }
+    
+}
+
+@media (max-width: 575.98px) { 
+    .root {
+        max-width: 90%;
+    }
+ }
